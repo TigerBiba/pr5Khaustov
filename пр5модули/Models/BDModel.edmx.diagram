@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8b34dfa7ed8d477e9cc7c88e1c6ceefb" Name="Diagram1" ZoomLevel="63">
+        <EntityTypeShape EntityType="HospitalProModel.Departament" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HospitalProModel.Drugs" Width="1.5" PointX="0.75" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="HospitalProModel.DrugsInDepartament" Width="1.5" PointX="3" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HospitalProModel.Finance" Width="1.5" PointX="9.75" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HospitalProModel.Hospitalizations" Width="1.5" PointX="12.75" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="HospitalProModel.Patient" Width="1.5" PointX="7.5" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="HospitalProModel.PatientCard" Width="1.5" PointX="9.75" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HospitalProModel.Prescriptions" Width="1.5" PointX="5.25" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HospitalProModel.Recordind" Width="1.5" PointX="9.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HospitalProModel.Reports" Width="1.5" PointX="12" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="HospitalProModel.Service" Width="1.5" PointX="9.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HospitalProModel.Staff" Width="1.5" PointX="1.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HospitalProModel.sysdiagrams" Width="1.5" PointX="3.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HospitalProModel.Ward" Width="1.5" PointX="8.25" PointY="20.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HospitalProModel.WardInDepartament" Width="1.5" PointX="10.5" PointY="20" IsExpanded="true" />
+        <AssociationConnector Association="HospitalProModel.FK_Departament_Staff" ManuallyRouted="false" />
+        <AssociationConnector Association="HospitalProModel.FK_DrugsInDepartament_Departament" ManuallyRouted="false" />
+        <AssociationConnector Association="HospitalProModel.FK_Finance_Departament" ManuallyRouted="false" />
+        <AssociationConnector Association="HospitalProModel.FK_Staff_Departament" ManuallyRouted="false" />
+        <AssociationConnector Association="HospitalProModel.FK_WardInDepartament_Departament" ManuallyRouted="false" />
+        <AssociationConnector Association="HospitalProModel.FK_DrugsInDepartament_Drugs" ManuallyRouted="false" />
+        <AssociationConnector Association="HospitalProModel.FK_Prescriptions_DrugsInDepartament" ManuallyRouted="false" />
+        <AssociationConnector Association="HospitalProModel.FK_Finance_Patient" ManuallyRouted="false" />
+        <AssociationConnector Association="HospitalProModel.FK_Finance_Service" ManuallyRouted="false" />
+        <AssociationConnector Association="HospitalProModel.FK_Hospitalizations_Patient" ManuallyRouted="false" />
+        <AssociationConnector Association="HospitalProModel.FK_Hospitalizations_WardInDepartament" ManuallyRouted="false" />
+        <AssociationConnector Association="HospitalProModel.FK_Patient_PatientCard" ManuallyRouted="false" />
+        <AssociationConnector Association="HospitalProModel.FK_Patient_Prescriptions" ManuallyRouted="false" />
+        <AssociationConnector Association="HospitalProModel.FK_Patient_Staff" ManuallyRouted="false" />
+        <AssociationConnector Association="HospitalProModel.FK_PatientCard_Patient" ManuallyRouted="false" />
+        <AssociationConnector Association="HospitalProModel.FK_Prescriptions_Patient" ManuallyRouted="false" />
+        <AssociationConnector Association="HospitalProModel.FK_Recordind_Patient" ManuallyRouted="false" />
+        <AssociationConnector Association="HospitalProModel.FK_Reports_Patient" ManuallyRouted="false" />
+        <AssociationConnector Association="HospitalProModel.FK_Recordind_Staff" ManuallyRouted="false" />
+        <AssociationConnector Association="HospitalProModel.FK_Reports_Recordind" ManuallyRouted="false" />
+        <AssociationConnector Association="HospitalProModel.FK_Reports_Service" ManuallyRouted="false" />
+        <AssociationConnector Association="HospitalProModel.FK_Reports_Staff" ManuallyRouted="false" />
+        <AssociationConnector Association="HospitalProModel.FK_WardInDepartament_Ward" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
